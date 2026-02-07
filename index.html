@@ -2,30 +2,25 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Game Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <button id="Btn" class="snakeBtn">Змійка</button>
-        <br>
-        <button id="Btn" class="crestikiBtn">Хрестики нулики</button>
-        <br>
-        <button id="Btn" class="calculatorBtn">калькулятор</button>
-        <br>
-        <button id="Btn" class="dinoBtn">chrome динозавтрик</button>
+
+<div class="container">
+    <button class="snakeBtn">Змійка</button>
+    <button class="crestikiBtn">Хрестики нулики</button>
+    <button class="calculatorBtn">Калькулятор</button>
+    <button class="dinoBtn">Chrome динозавтрик</button>
+</div>
+
+<div class="snake-game hide">
+    <h1>🐍 Змійка</h1>
+    <div class="game">
+        <div id="board"></div>
     </div>
-
-    <div class="snake hide">
-        <h1>🐍 Змійка</h1>
-
-        <div class="game">
-            <div id="board"></div>
-        </div>
-
-        <p id="score">рахунок: 0 | рекорд: 0</p>
-
-    </div>
+    <p id="score">рахунок: 0 | рекорд: 0</p>
+</div>
 
 <script src="script.js"></script>
 </body>
