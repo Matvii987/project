@@ -1,8 +1,14 @@
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
 
-
+    const snakeBtn = document.querySelector(".snakeBtn");
+    const snakeDiv = document.querySelector(".snake");
+    const container = document.querySelector(".container");
 
 function startSnake() {
+    snakeDiv.classList.remove("hide");
+    container.classList.add("hide");
+    
+
 
     const board = document.getElementById("board");
     const scoreText = document.getElementById("score");
@@ -104,6 +110,6 @@ function startSnake() {
     });
 };
 
-    
+    snakeBtn.addEventListener('click', startSnake);
 
 });
